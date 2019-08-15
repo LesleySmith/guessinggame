@@ -108,14 +108,14 @@ function playGame() {
         game.playersGuessSubmission(playersGuess);
     });
 
-    inputEnter.addEventListener('keyup', function(e) {
-        if(e.keyCode === 13) {
-            const playersGuess = document.getElementById('player-input').value;
-            document.querySelector('input').value = '';
+    // inputEnter.addEventListener('keyup', function(e) {
+    //     if(e.keyCode === 13) {
+    //         const playersGuess = document.getElementById('player-input').value;
+    //         document.querySelector('input').value = '';
 
-            game.playersGuessSubmission(playersGuess);
-        }
-    });
+    //         game.playersGuessSubmission(playersGuess);
+    //     }
+    // });
 
     hintButton.addEventListener('click', function() {
         const hints = game.provideHint();
